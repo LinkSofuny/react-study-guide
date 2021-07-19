@@ -4,11 +4,11 @@ React全家桶学习指南， 体系化地从JSX语法到令人痛疼的redux，
 ***
 
 ## 脑图鸟瞰
+![React.png][sumary]
 
-![React.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/58ff6c06c5154582b0c464f62cf2cb96~tplv-k3u1fbpfcp-watermark.image)
-
-
+## 目录
 
 -------
 [juejin]: https://juejin.cn/user/2005929448188567 "我的掘金"
 [React]: https://react.docschina.org/ "React"
+[sumary]: /readme-img/React.png
