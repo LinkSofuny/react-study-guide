@@ -12,7 +12,8 @@ $ git clone https://github.com/LinkSofuny/react-study-guide.git
 ```
 ```
 $ cd react-study-guide
-
+```
+```
 $ yarn start
 ```
 
@@ -43,10 +44,28 @@ $ yarn start
     * demo
 
 
+## JSX语法
+![JSX][JSX]
+## React组件化
+![React组件化][React组件化]
+## React-Router
+![React-Router][React-Router]
+## Redux
+![Redux][Redux]
+## Hooks
+![Hooks][Hooks]
 
-
+## 拓展
+![拓展][拓展]
 ### 更新
+
 -------
 [juejin]: https://juejin.cn/user/2005929448188567 "我的掘金"
 [React]: https://react.docschina.org/ "React"
-[sumary]: /readme-img/React.png
+[sumary]: /readme-img/React.png "鸟瞰图"
+[JSX]: /readme-img/JSX.png "JSX语法"
+[React组件化]: /readme-img/React组件化.png "React组件化"
+[React-Router]: /readme-img/React-Router.png "React-Router"
+[Redux]: /readme-img/Redux.png "Redux"
+[Hooks]: /readme-img/Hooks.png "Hooks"
+[拓展]: /readme-img/拓展.png "拓展"
