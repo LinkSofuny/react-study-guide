@@ -1,10 +1,19 @@
 # react-study-guide
-:stuck_out_tongue_winking_eye:**React全家桶学习指南**， 体系化地从JSX语法到令人痛疼的redux， 让react学习更加简单。 React文档对于刚入门的新人来说不是特别友好， 跳跃性强，并且Demo比较综合， 无法针对模块练习， 为了解决这一问题， 我重新整理了一份更直接简单的笔记， 帮助萌新高效地入门[React][React]
+:stuck_out_tongue_winking_eye:**React全家桶学习指南**， 通过**脑图**体系化地从JSX语法到令人痛疼的redux， 让react学习更加简单。 React文档对于刚入门的新人来说不是特别友好， 跳跃性强，并且Demo比较综合， 无法针对模块练习， 为了解决这一问题， 我重新整理了一份更直接简单的笔记， 帮助萌新高效地入门[React][React]
 
 ***
 |作者|Link|
 |---|---
 |掘金 \| 公众号|[前端Link][juejin]
+
+
+### 说明
+
+脑图中的每个分支,基本都对应着React中的每个功能, 并且针对这个功能,我都会配置一个极简的Demo只纯粹地让你懂得这个API的功能(如果真的特别简单的API, 我也只是介绍一下, 因为你看一眼也就懂了)
+
+> **Why?**  首先当然是为了我自己也能够对这些常用的API烂熟于心, 其次代码是敲出来的, 只有这样你才能真正感受它的用处.
+
+> **注:** 这个文档是为了地毯式地搜索自己对React不熟悉的地方, 为什么需要做到这个地步呢? :sunglasses:**当然是为了以后能够深窥React的源码, 理解他的精髓. 而踏入这一步前, 熟悉表层的React就非常重要了**, 倘若你也跟我一样希望以后能够深入React, 那也许这份文档会很适合你.
 
 ### 安装
 ```
@@ -22,10 +31,12 @@ $ yarn start
 > **/study-demo** 下有一个 `src` 文件， 在`test-demo`中我存放了我写好的Demo方便你进行调试， 针对不同的Demo， 你只需要将带有`src_` 前缀地文件改名为`src` 然后替代 **/study-demo** 启动项目即可运行我写好的demo
 
 - 后期我会想办法通过webpack打包将这一步骤省略掉
+
 ## 脑图鸟瞰
 > 放心，尽管脑图内容看起来繁多，但是都是经过整理的，只要你一个一个模块看下来肯定能够懂React每个功能的作用:blush:
 
 ![React.png][sumary]
+
 
 
 ### 项目目录
@@ -45,18 +56,12 @@ $ yarn start
 
 
 ## JSX语法
-![JSX][JSX]
 ## React组件化
-![React组件化][React组件化]
 ## React-Router
-![React-Router][React-Router]
 ## Redux
-![Redux][Redux]
 ## Hooks
-![Hooks][Hooks]
 
 ## 拓展
-![拓展][拓展]
 ### 更新
 // ....
 -------
