@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="test"></div>
+    <script src="../React/old/react.development.js"></script>
+    <script src="../React/old/react-dom.development.js"></script>
+    <script src="../React/old/babel.min.js"></script>
+    <script type="text/babel">
+      class Demo extends React.Component{
+        state = {
+          isLogin: true
+        }
+        render(){
+          let button
+          const isLogin = this.state.isLogin
+          if(isLogin) {
+            // 将点击事件函数作为props传入组件
+            button = <LogoutBtn onLogoutClick={this.logout}/> 
+          } else {
+            button = <LoginBtn onLoginClick={this.login}/>
+          }
+          return (
+            <div>
+              <Greeting isLogin={this.state.isLogin}/>
+              {button}  {/* 根据state中的islogin判断展示logoutBtn还是LoginBtn */}
+            </div>
+          )
+        }
+        login = () => {
+          this.setState({isLogin: true})
+        }
+        logout = () =>{
+          this.setState({isLogin: false})
+        }
+        
+      }
+
+      function LoginBtn(props){
+        return (
+          <button onClick={props.onLoginClick}>Login</button>
+        )
+      }
+      function LogoutBtn(props){
+        return (
+          <button onClick={props.onLogoutClick}>Logout</button>
+        )
+      }
+      
+      function Greeting(props){
+        const isLogin = props.isLogin
+        if(isLogin) return (
+          <Welcome />
+        )
+        return (
+          <Bye />
+        )
+      }
+      // UI
+      function Welcome(){
+        return <h1>Welcome</h1>
+      }
+      function Bye(){
+        return <h1>Bye</h1>
+      }
+
+      
+      ReactDOM.render(<Demo />, document.querySelector('#test'))
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .item-list {
+      background-color: orange;
+      margin: 10px 0;
+    }
+  </style>
+  <body>
+    <div id="test"></div>
+    <script src="../React/old/react.development.js"></script>
+    <script src="../React/old/react-dom.development.js"></script>
+    <script src="../React/old/babel.min.js"></script>
+    <script type="text/babel">
+      let arr = [
+          {
+            title:'link',
+            content: 'ok, 我要说点什么'
+          },
+          {
+            title:'掘金',
+            content: 'ok, 发文章'
+          },
+          {
+            title:'公众号',
+            content: 'ok, 偷个懒'
+          },
+        ]
+      class Demo extends React.Component {
+        state = {
+          arrInfo: this.props.number
+        }
+        itemList = this.props.number.map((item, index) => {
+          return <ItemList item={item} key={index} />
+        })
+        render() {
+          return <ul>{this.itemList}</ul>
+        }
+      }
+      function ItemList (props) {
+        let item = props.item
+        return (
+          <li className="item-list">
+            <div>title: {item.title}</div>  
+            <div>content: {item.content}</div>  
+          </li>
+        )
+      }
+      ReactDOM.render(<Demo number={arr} />, document.querySelector('#test'))
+    </script>
+  </body>
+</html>

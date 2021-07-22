@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="test"></div>
+    <script src="../React/old/react.development.js"></script>
+    <script src="../React/old/react-dom.development.js"></script>
+    <script src="../React/old/babel.min.js"></script>
+    <script type="text/babel">
+      class Father extends React.Component {
+        constructor(props) {
+          super(props)
+          this.state = {
+            info: '还没消息...'
+          }
+        }
+        getInfo = item => {
+          this.setState({
+            info: item
+          })
+        }
+        render(){
+          return (
+            <div>
+              <p>info: {this.state.info}</p>
+              <Clild getChildInfo={this.getInfo}/>
+            </div>
+          )
+        }
+      } 
+      function Clild (props) {
+        function emitInfo() {
+          props.getChildInfo('我是子组件发送过去的数据')
+        }
+        return (
+          <button onClick={emitInfo}>点击发送消息</button>
+        )
+      }
+      ReactDOM.render(<Father />, document.querySelector('#test'))
+    </script>
+  </body>
+</html>
+
+

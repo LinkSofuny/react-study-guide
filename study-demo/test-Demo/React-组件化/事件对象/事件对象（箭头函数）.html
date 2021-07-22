@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="test"></div>
+    <script src="../React/old/react.development.js"></script>
+    <script src="../React/old/react-dom.development.js"></script>
+    <script src="../React/old/babel.min.js"></script>
+    <script type="text/babel">
+      class Demo extends React.Component {
+        constructor(props) {
+          super(props)
+        }
+        switchFn = () => {
+          console.log('点击成功')
+        }
+        render(){
+          return (
+            <div onClick={this.switchFn}>
+              这里是事件点击处
+            </div>
+          )
+        }
+      } 
+      ReactDOM.render(<Demo />, document.querySelector('#test'))
+    </script>
+  </body>
+</html>
+
+
