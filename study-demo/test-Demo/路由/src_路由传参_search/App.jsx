@@ -20,7 +20,9 @@ class App extends Component {
         </div>
       </div>
     )
-  }}
+  }
+}
+
 class Home extends Component {
   render() {
       const { search } = this.props.location
@@ -34,3 +36,5 @@ class Home extends Component {
 }
 
 export default App
+
+

@@ -30,6 +30,7 @@ class Home extends Component {
       return (
           <div>
               Home: {title}
+              age: {age}
           </div>
       )
   }
