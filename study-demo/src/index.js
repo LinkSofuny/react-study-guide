@@ -8,3 +8,4 @@ ReactDom.render(<App />, document.getElementById('root'))
 store.subscribe( () => {
     ReactDom.render(<App />, document.getElementById('root'))
 })
+
