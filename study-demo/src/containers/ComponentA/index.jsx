@@ -7,7 +7,7 @@ class ComponentA extends Component {
         this.props.addCount(1)
     }
     addCountAsync = () => {
-        this.props.addCountAsync(1, 1000)
+        this.props.addCountAsync(2)
     }
     render() {
         const { add } = this.props.state
@@ -16,7 +16,6 @@ class ComponentA extends Component {
                 <h1>ComponentA</h1>
                 <p>count: {add}</p>
                 <button onClick={this.addCount} >click add</button>
-                <button onClick={this.addCountAsync} >click addCountAsync</button>
             </div>
         )
     }
@@ -34,3 +33,5 @@ export default connect(
         }
     }
 )(ComponentA)
+
+
