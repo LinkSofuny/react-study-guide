@@ -1,48 +1,37 @@
 import React, { Component } from 'react'
 import './index.css'
 export default class index extends Component {
-    state = {
-        hasErr : '',
-        ErrNum: 0
-    }
-    // 从Error中获得一个state状态, 
-    static getDerivedStateFromError(err) {
-        console.log('err', err)
-        return {hasErr: err}
-    }
-    componentDidCatch(error, errorInfo) {
-        console.log('发生错误咯', error, errorInfo)
-    }
-
     render() {
         return (
             <div className='index' >
                 <h1 >index</h1>
-								{/* 错误对象存在,则渲染条件成立的DOM*/}
-                {this.state.hasErr ? <h1>这里发生错误了</h1> : <A />}
+                <A render={(name, age) => <B  name={name} age={age}/>}/>
             </div>
         )
     }
 }
-
 class A extends Component {
     state = {
-        person: ''
-        // [
-        //     {name: 'link', age: 1},
-        //     {name: 'link', age: 2}
-        // ]
+        name: '我是A传递给B的数据',
+        age: '我也是呢'
     }
     render() {
-        
+        const { name, age } = this.state
         return (
             <div className='A'>
                 <h1>AAA</h1>
-                {
-                    this.state.person.map(item => { // 这里抛错
-                        return <p key={item.age}>{item.name + '--' + item.age}</p>
-                    })
-                }
+                {this.props.render( name, age )}
+            </div>
+        )
+    }
+}
+class B extends Component {
+    render() {
+        return (
+            <div className='B'>
+                <h1>BBB</h1>
+                {this.props.name}<br />
+                {this.props.age}
             </div>
         )
     }

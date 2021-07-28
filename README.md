@@ -18,6 +18,9 @@
 
 
 ### 安装
+![指南.png][指南]
+
+
 ```
 $ git clone https://github.com/LinkSofuny/react-study-guide.git
 ```
@@ -44,29 +47,17 @@ $ yarn start
 ### 项目目录
 
 * [JSX语法](#JSX语法)
-    * demo
 * [React组件化](#React组件化)
-    * demo
 * [React-Router](#React-Router)
-    * demo
 * [Redux](#Redux)
-    * demo
 * [Hooks](#Hooks)
-    * demo
 * [拓展](#拓展)
-    * demo
 
 
-## JSX语法
-## React组件化
-## React-Router
-## Redux
-## Hooks
-
-## 拓展
 ### 更新
 
 - 2021/07/23 更新完React组件化与部分路由的Demo
+- 2012/07/23 完成所有Demo与文档
 
 
 # 感谢
@@ -83,3 +74,4 @@ $ yarn start
 [Redux]: /readme-img/Redux.png "Redux"
 [Hooks]: /readme-img/Hooks.png "Hooks"
 [拓展]: /readme-img/拓展.png "拓展"
+[指南]: /readme-img/指南.gif "指南"
