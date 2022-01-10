@@ -2,10 +2,7 @@
 :stuck_out_tongue_winking_eye:**React全家桶学习指南**， 通过**脑图**体系化地从JSX语法到令人痛疼的redux， 让react学习更加简单。 React文档对于刚入门的新人来说不是特别友好， 跳跃性强，并且Demo比较综合， 无法针对模块练习， 为了解决这一问题， 我重新整理了一份更直接简单的笔记， 帮助萌新高效地入门[React][React], 欢迎star:star::star:
 
 ***
-|作者|Link|
-|---|---
-|掘金 \| 公众号|[前端Link][juejin]
-
+个人社交主页:  <a href="https://www.zhihu.com/people/chen-yu-dong-83-17"><img src="https://github.com/LinkSofuny/vue-core-analyse/blob/dev/%20docs/images/zhihu.png" width="30"></a> <a href="https://juejin.cn/user/2005929448188567/posts"><img src="https://github.com/LinkSofuny/vue-core-analyse/blob/dev/%20docs/images/juejin.png" width="30"></a>
   
 ### 配套指南
 [掘金: React入门指南][掘金文章]
